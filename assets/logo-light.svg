@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <title>BH-watermark — Britley Hoff stamp mark light</title>
+
+  <g transform="translate(68, 80)">
+    <circle cx="0" cy="0" r="62" fill="none" stroke="#993556" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="16" fill="#993556"/>
+    <line x1="0" y1="-16" x2="0" y2="-62" stroke="#993556" stroke-width="2.5"/>
+    <line x1="0" y1="16" x2="0" y2="62" stroke="#993556" stroke-width="2.5"/>
+    <line x1="-16" y1="0" x2="-62" y2="0" stroke="#993556" stroke-width="2.5"/>
+    <line x1="16" y1="0" x2="62" y2="0" stroke="#993556" stroke-width="2.5"/>
+    <circle cx="32" cy="-32" r="9" fill="none" stroke="#D4537E" stroke-width="2.5"/>
+    <line x1="32" y1="-32" x2="76" y2="-6" stroke="#D4537E" stroke-width="2.5"/>
+    <circle cx="76" cy="-6" r="8" fill="#993556" stroke="#D4537E" stroke-width="2"/>
+  </g>
+</svg>
