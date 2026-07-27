@@ -3,7 +3,7 @@
 Site for consulting, speaking engagements, and mainframe security &
 documentation work — hosted on GitHub Pages.
 
-**Live site:** https://wren-creator.github.io/
+**Live site:** https://britleyhoffconsulting.com/
 
 ## Contents
 
@@ -15,4 +15,5 @@ documentation work — hosted on GitHub Pages.
 ## Related
 
 - Speaker sheet: https://wren-creator.github.io/speaking/
+- Alertis (stock price alerts): https://alertis.net
 - Open-source projects: https://github.com/wren-creator
