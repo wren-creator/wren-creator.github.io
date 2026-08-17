@@ -31,7 +31,7 @@
   <div class="wrap">
     <p class="eyebrow">About</p>
     <p>20+ years hardening and running Linux, z/Linux, and IBM mainframe infrastructure, most recently owning end-to-end security and modernization strategy for a production z/Linux fleet of 1,000+ RHEL/SUSE servers on IBM S/390X mainframes.</p>
-    <p>Built the Rosetta Stone legacy-modernization pipeline — first shown at Red Hat Summit, expanded at the 2026 Red Hat Conference in Atlanta — and Web3270, an open-source, browser-based TN3270 client with a built-in mainframe security-testing toolkit. Author of eight books on private, auditable AI infrastructure.</p>
+    <p>Built the Rosetta Stone legacy-modernization pipeline — first shown at Red Hat Summit, expanded at the 2026 Red Hat Conference in Atlanta — and Web3270, an open-source, browser-based TN3270 client with a built-in mainframe security-testing toolkit. Author of <span id="book-count-1">eight</span> books on private, auditable AI infrastructure.</p>
     <div class="tags">
       <span>DoD C4 CLEARANCE</span>
       <span>GPEN</span>
@@ -119,7 +119,7 @@
 <section id="publications">
   <div class="wrap">
     <p class="eyebrow">Publications</p>
-    <p>Eight books on private, auditable AI infrastructure, from Terraform patterns for LLMOps to mainframe security, sold direct rather than locked behind Apple's cut.</p>
+    <p><span id="book-count-2">Eight</span> books on private, auditable AI infrastructure, from Terraform patterns for LLMOps to mainframe security, sold direct rather than locked behind Apple's cut.</p>
     <p class="cta"><a class="btn" href="https://books.britleyhoffconsulting.com">See all books &amp; buy &rarr;</a></p>
   </div>
 </section>
@@ -139,5 +139,24 @@
   </div>
 </footer>
 
+<script>
+  // Book count on this page reads live off books.britleyhoffconsulting.com's
+  // own data/books.js (the catalog's single source of truth), so it can't go
+  // stale here the way a hardcoded number did. Falls back to the static
+  // "eight"/"Eight" text already in the markup if the fetch fails.
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://books.britleyhoffconsulting.com/data/books.js';
+    s.onload = function () {
+      if (typeof BOOKS === 'undefined' || !Array.isArray(BOOKS)) return;
+      var count = BOOKS.length;
+      ['book-count-1', 'book-count-2'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.textContent = count;
+      });
+    };
+    document.body.appendChild(s);
+  })();
+</script>
 </body>
 </html>
