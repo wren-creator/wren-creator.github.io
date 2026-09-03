@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Britley Hoff Consulting — Mainframe Security &amp; Modernization</title>
-<meta name="description" content="Mainframe security, modernization, and documentation consulting. Speaking engagements on legacy systems, RACF security, and sovereign AI infrastructure.">
+<meta name="description" content="Mainframe security, modernization, and documentation consulting. Penetration testing across web applications, ICS/OT, and the mainframe. Speaking engagements on legacy systems, RACF security, and sovereign AI infrastructure.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -71,6 +71,36 @@
       </div>
       <div class="field" data-label="SECURITY &amp; DOCS">
         <p>Modernization strategy for IBM mainframe and z/Linux environments, turning undocumented shell scripts and legacy code into fully tested, auditable references while uncovering protocol-level gaps and architectural debt left behind by decades of tribal knowledge. Scoped strictly around live production systems to build clean bridges into modern AI and automation pipelines without a rip-and-replace pitch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offensive-security">
+  <div class="wrap">
+    <p class="eyebrow">Offensive Security</p>
+    <p>Hands-on penetration testing across the systems most teams have no one to test: web applications, industrial control, and the mainframe. GPEN / GCFA held.</p>
+    <div class="fields">
+      <div class="field" data-label="WEB APPLICATION">
+        <p>OWASP-style application assessment: SQL injection, authentication and session flaws, TLS and certificate handling, and the logic bugs scanners miss.</p>
+      </div>
+      <div class="field" data-label="ICS &amp; OT / PLC">
+        <p>Modbus/TCP, EtherNet/IP (CIP), and Siemens S7comm. Process-aware attacks against simulated controllers, plus zone-and-conduit segmentation and controller hardening to shut them down.</p>
+      </div>
+      <div class="field" data-label="MAINFRAME &amp; TN3270">
+        <p>RACF probing, CICS assessment, protocol fuzzing, and MITM traffic modification over TN3270(E), using the Web3270 and EZrecon-2 toolkits.</p>
+      </div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:3rem">Training labs I built and released</p>
+    <div class="oss-list">
+      <div class="oss-item">
+        <a href="https://github.com/wren-creator/widgetorium">Widgetorium</a>
+        <p>Deliberately vulnerable widget-shop web lab, 19 planted bugs across SQL injection, TLS and certificate handling, general web, and FTP, each with a documented exploit path and fix, an instructor answer key, and the Widgetorium 101 syllabus. Manual technique first, scanners second. One docker-compose, loopback only.</p>
+      </div>
+      <div class="oss-item">
+        <a href="https://github.com/wren-creator/crosscreek">Cross Creek</a>
+        <p>Mock water treatment plant and power substation with simulated PLCs on real protocols. An attack topology wired with the weaknesses compromising utilities now, a defended topology that closes every one, and a seven-session syllabus modeled on real incidents. Authorised ICS/OT training only.</p>
       </div>
     </div>
   </div>
