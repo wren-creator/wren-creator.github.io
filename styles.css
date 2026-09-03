@@ -149,11 +149,11 @@ a:focus-visible, button:focus-visible {
   width: 0;
 }
 .boot .line-1 {
-  animation: type-27 0.7s steps(27, end) 0.1s forwards,
+  animation: type-27 0.7s steps(26, end) 0.1s forwards,
              blink-off 0.1s 0.8s forwards;
 }
 .boot .line-2 {
-  animation: type-34 0.85s steps(34, end) 0.9s forwards,
+  animation: type-34 0.85s steps(33, end) 0.9s forwards,
              blink-off 0.1s 1.75s forwards;
 }
 .boot .ok { color: var(--accent); }
@@ -200,11 +200,11 @@ a:focus-visible, button:focus-visible {
 
 @keyframes type-27 {
   from { width: 0; }
-  to { width: 20.5ch; }
+  to { width: 26ch; }
 }
 @keyframes type-34 {
   from { width: 0; }
-  to { width: 25.5ch; }
+  to { width: 33ch; }
 }
 @keyframes blink-off {
   to { border-color: transparent; }
